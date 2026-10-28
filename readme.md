@@ -155,3 +155,7 @@ API REST
 ```
 
 Este README será atualizado conforme novas funcionalidades e tecnologias forem adicionadas ao projeto.
+
+mais tacnologias inataladas
+
+npm instal cors
