@@ -159,3 +159,4 @@ Este README será atualizado conforme novas funcionalidades e tecnologias forem 
 mais tacnologias inataladas
 
 npm instal cors
+npm instal -D @types/cors
