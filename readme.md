@@ -1,75 +1,157 @@
-<p align="center">
-  <a href="https://aluiziodeveloper.com.br/">
-    <img alt="Conex Networks" src="https://aluiziodeveloper.com.br/assets/img/icon.png" width="200" />
-  </a>
-</p>
-<h2 align="center">
-Cursos, mini-cursos, dicas, tutoriais e muito mais.
-</h2>
+# API de Vendas
 
-## Curso: API Restful Javascript com Node.js, Typescript, TypeORM etc
+Projeto de estudo para desenvolvimento de uma **API RESTful utilizando Node.js e TypeScript**.
 
-Seja muito bem-vindo e bem-vinda ao curso: **API Restful Javascript com Node.js, Typescript, TypeORM etc**, aqui você desenvolverá um exemplo de uma API de vendas, com os módulos de produtos, usuários, clientes e pedidos de compras, além vários outros recursos, incluindo o uso do TypeORM, upload de arquivos, autenticação com JWT, sistema de cache com o Redis, e muito mais.
+O projeto será desenvolvido durante o curso **API RESTful JavaScript com Node.js, TypeScript, TypeORM etc**, com o objetivo de praticar desenvolvimento backend, criação de rotas, banco de dados, autenticação, tratamento de erros e organização de uma API.
 
-Você precisará do Docker instalado em seu ambiente de desenvolvimento para rodar Postgres e Redis.
+---
 
-Este repositório contém o código inicial do projeto que será desenvolvido durante o curso. A ideia é ganhar tempo já trazendo todas as configurações iniciais prontas e focar naquilo que é mais importante, que é a implementação da API de fato.
+## 🚀 Tecnologias utilizadas
 
-### Instalando o projeto no seu PC
+Inicialmente o projeto utiliza:
 
-Instale o projeto em seu ambiente de desenvolvimento seguindo as etapas a seguir.
+- Node.js
+- TypeScript
+- Express
+- TypeORM
+- PostgreSQL
+- Git
+- npm
 
-> NOTA: caso o seu PC esteja com Windows, recomendo trabalhar com um WSL Ubuntu. Acesse o link https://www.aluiziodeveloper.com.br/ambiente-de-desenvolvimento-no-windows-10-11-com-wsl/ para mais informações.
+Outras tecnologias serão adicionadas conforme o desenvolvimento do projeto.
 
-1. No Shell, clonar o repositório do projeto em seu PC.
+---
 
-```shell
-git clone https://github.com/conexnetworks/apivendas2024-course-start-code.git api-vendas-2024
+## 📦 Código inicial do curso
+
+O projeto utiliza como ponto de partida o código disponibilizado pelo instrutor:
+
+```text
+https://github.com/conexnetworks/apivendas2024-course-start-code
 ```
 
-2. No Shell, acessar a pasta do projeto e instalar as dependências com o `Npm`.
+Para clonar o projeto:
 
-```shell
-cd api-vendas-2024
-
-npm ci
+```bash
+git clone https://github.com/conexnetworks/apivendas2024-course-start-code.git
 ```
 
-3. No Shell, executar o comando `code .` para abrir o Visual Studio Code com o projeto carregado.
+Depois, acessar a pasta:
 
-4. Criar o arquivo de variaveis de ambiente `.env` na pasta raiz do projeto, incluindo o conteúdo a seguir:
-
-```shell
-# Application
-PORT=3333
-API_URL=http://localhost:3333
+```bash
+cd apivendas2024-course-start-code
 ```
 
-### Executando o projeto em seu PC
+---
 
-O projeto inicial contém apenas o arquivo `server.ts` com o um `console.log`. Executar o servidor e observar a mensagem `Olá Dev!` na console do shell:
+## 📥 Instalando as dependências
 
-```shell
+Após clonar o projeto:
+
+```bash
+npm install
+```
+
+Esse comando instala as dependências definidas no arquivo `package.json`.
+
+---
+
+## 📚 Dependências iniciais
+
+O código inicial já possui algumas dependências configuradas:
+
+```text
+dotenv
+express
+express-async-errors
+pg
+reflect-metadata
+typeorm
+```
+
+### Express
+
+Utilizado para criação do servidor HTTP, rotas e endpoints da API.
+
+### dotenv
+
+Utilizado para leitura de variáveis de ambiente através de arquivos como:
+
+```text
+.env
+```
+
+### pg
+
+Driver utilizado para comunicação entre a aplicação Node.js e o banco de dados PostgreSQL.
+
+### TypeORM
+
+ORM utilizado para trabalhar com banco de dados através de entidades, repositórios e relacionamentos utilizando TypeScript.
+
+### reflect-metadata
+
+Biblioteca utilizada em conjunto com recursos de decorators e pelo TypeORM.
+
+### express-async-errors
+
+Auxilia no tratamento de erros provenientes de funções assíncronas utilizadas com Express.
+
+---
+
+## 🗂️ Estrutura inicial
+
+Neste momento, o projeto possui uma estrutura básica:
+
+```text
+src/
+└── server.ts
+
+.editorconfig
+.gitignore
+.prettierignore
+.prettierrc
+eslint.config.mjs
+package.json
+package-lock.json
+tsconfig.json
+```
+
+A estrutura será ampliada conforme novas partes da API forem desenvolvidas.
+
+---
+
+## ▶️ Executando o projeto
+
+O projeto possui um script de desenvolvimento configurado no `package.json`.
+
+Quando as dependências estiverem instaladas:
+
+```bash
 npm run dev
 ```
 
-**Partiu curso!**
+---
 
+## 🎯 Objetivo do projeto
 
-## Redes Sociais
+Durante o desenvolvimento serão estudados e implementados conceitos como:
 
-[Site Conex Networks](https://conexnetworks.com.br)
+```text
+API REST
+→ rotas e endpoints
+→ controllers
+→ services / casos de uso
+→ entidades
+→ repositories
+→ TypeORM
+→ PostgreSQL
+→ relacionamentos
+→ tratamento de erros
+→ autenticação JWT
+→ upload de arquivos
+→ cache
+→ envio de e-mails
+```
 
-[Blog Aluizio Developer](https://aluiziodeveloper.com.br)
-
-[Perfil Udemy](https://www.udemy.com/user/jorge-aluizio-alves-de-souza/)
-
-[Cursos Gratuitos](https://letsgoahead.com.br/)
-
-[YouTube](https://www.youtube.com/jorgealuizio)
-
-[Instagram](https://www.instagram.com/conexnetworks.dev/)
-
-[Servidor no Discord](https://discord.gg/3J87BMz5fD)
-
-[LinkedIn](https://www.linkedin.com/in/jorgealuizio/)
+Este README será atualizado conforme novas funcionalidades e tecnologias forem adicionadas ao projeto.
