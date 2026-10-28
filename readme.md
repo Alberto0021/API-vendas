@@ -160,3 +160,4 @@ mais tacnologias inataladas
 
 npm instal cors
 npm instal -D @types/cors
+npm install zod
