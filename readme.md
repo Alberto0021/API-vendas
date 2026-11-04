@@ -164,3 +164,4 @@ npm install zod
 npm install -g dotenv-cli
 npm install swagger-ui-express swagger-jsdoc
 npm install -D @types/swagger-ui-express @types/swagger-jsdoc
+npm install typeorm pg
